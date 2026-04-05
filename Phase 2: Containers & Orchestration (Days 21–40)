@@ -1,205 +1,59 @@
 # Phase 2: Containers & Orchestration (Days 21–40)
 
-## Day 21: Introduction to Docker
-- **Objective**: Understand containerization fundamentals and install Docker.
-- **Tasks**:
-  - Install Docker on your machine.
-  - Understand concepts: Containers vs Virtual Machines.
-  - Run your first container with `docker run hello-world`.
-- **Code Examples**:
-  ```bash
-  docker run hello-world
-  ```
-- **Resources**:
-  - [Docker Documentation](https://docs.docker.com/get-started/)
+## Prerequisites
+Before diving into containers and orchestration, it's essential to have:
+- A basic understanding of software development practices.
+- Familiarity with Linux command-line basics.
+- Knowledge of cloud computing concepts.
 
-## Day 22: Docker Images
-- **Objective**: Learn about Docker images and how to create your own.
-- **Tasks**:
-  - Pull an image from Docker Hub.
-  - Create a Dockerfile and build an image.
-- **Code Examples**:
-  ```Dockerfile
-  FROM ubuntu:latest
-  RUN apt-get update && apt-get install -y curl
-  ```
-  ```bash
-  docker build -t my-ubuntu-image .
-  ```
-- **Resources**:
-  - [Creating Docker Images](https://docs.docker.com/get-started/part2/)
+## Enhanced Objectives
+- **Understand Containers**: Learn what containers are and why they are essential for modern applications.
+  - **Why It Matters**: Containers enable lightweight and portable environments that can run anywhere, reducing deployment issues.
+- **Discover Orchestration**: Explore the role of orchestration tools in managing container deployments.
+  - **Why It Matters**: Orchestration automates the deployment, scaling, and management of containerized applications.
 
-## Day 23: Docker Containers
-- **Objective**: Manage Docker containers effectively.
-- **Tasks**:
-  - Learn how to start, stop, and remove containers.
-  - Understand container lifecycle and states.
-- **Code Examples**:
-  ```bash
-  docker ps -a  # List containers
-  docker start <container_id>
-  docker stop <container_id>
-  docker rm <container_id>
-  ```
-- **Resources**:
-  - [Managing Containers](https://docs.docker.com/engine/reference/commandline/cli/)
+## Best Practices
+- Always keep your container images updated.
+- Use multi-stage builds in Docker to keep images small.
+- Implement resource limits in orchestration tools to avoid resource contention.
 
-## Day 24: Docker Volumes
-- **Objective**: Persist data using Docker volumes.
-- **Tasks**:
-  - Understand the differences between volumes and bind mounts.
-  - Create and manage volumes.
-- **Code Examples**:
-  ```bash
-  docker volume create my-volume
-  docker run -d -v my-volume:/data my-ubuntu-image
-  ```
-- **Resources**:
-  - [Persisting Data](https://docs.docker.com/storage/)
+## Real-World Use Cases
+- A SaaS application using Docker containers for microservices.
+- Continuous Integration/Continuous Deployment (CI/CD) pipelines utilizing Kubernetes for orchestration.
 
-## Day 25: Docker Networking
-- **Objective**: Connect containers using Docker networking.
-- **Tasks**:
-  - Learn about bridge and host networks.
-  - Create your custom network.
-- **Code Examples**:
-  ```bash
-  docker network create my-network
-  docker run -d --network my-network --name my-container my-ubuntu-image
-  ```
-- **Resources**:
-  - [Networking Overview](https://docs.docker.com/network/)
+## Sample Outputs
+- Demonstration of a running application in a container with Docker commands.
 
-## Day 26: Introduction to Orchestration
-- **Objective**: Understand the need for orchestration in containerized applications.
-- **Tasks**:
-  - Learn the limitations of managing docker containers manually.
-- **Resources**:
-  - [Why Orchestration?](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
+## Interactive Exercises
+- Build a simple web application in a container.
+- Set up a multi-container application using Docker Compose.
 
-## Day 27: Kubernetes Overview
-- **Objective**: Familiarize yourself with Kubernetes architecture and components.
-- **Tasks**:
-  - Understand Pods, Nodes, and Clusters.
-- **Resources**:
-  - [Kubernetes Documentation](https://kubernetes.io/docs/home/)
+## Architecture Diagrams
+- Include diagrams showing container communication and orchestration flows.
 
-## Day 28: Setting Up Minikube
-- **Objective**: Install Minikube and run Kubernetes locally.
-- **Tasks**:
-  - Install Minikube and kubectl.
-  - Start a local cluster.
-- **Code Examples**:
-  ```bash
-  minikube start
-  kubectl get nodes
-  ```
-- **Resources**:
-  - [Minikube Installation](https://minikube.sigs.k8s.io/docs/start/)
+## Tool Versions
+- Docker: 20.10.6
+- Kubernetes: 1.21.0
 
-## Day 29: Deploying Your First Application
-- **Objective**: Deploy a sample application on Kubernetes.
-- **Tasks**:
-  - Create a deployment and expose it.
-- **Code Examples**:
-  ```bash
-  kubectl create deployment nginx --image=nginx
-  kubectl expose deployment nginx --type=LoadBalancer --port=80
-  ```
-- **Resources**:
-  - [Deployments on Kubernetes](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+## Self-Assessment Questions
+1. What are the main benefits of using containers?
+2. How does orchestration streamline application management?
 
-## Day 30: Services in Kubernetes
-- **Objective**: Understand Kubernetes services and networking.
-- **Tasks**:
-  - Explore ClusterIP, NodePort, and LoadBalancer services.
-- **Resources**:
-  - [Kubernetes Services](https://kubernetes.io/docs/concepts/services-networking/service/)
+## YAML Examples
+- Sample Kubernetes deployment YAML files for deploying applications.
 
-## Day 31: ConfigMaps and Secrets
-- **Objective**: Externalize configurations using ConfigMaps and Secrets.
-- **Tasks**:
-  - Create and use ConfigMaps and Secrets in applications.
-- **Code Examples**:
-  ```bash
-  kubectl create configmap app-config --from-literal=key=value
-  kubectl create secret generic app-secret --from-literal=password=secret
-  ```
-- **Resources**:
-  - [ConfigMaps](https://kubernetes.io/docs/concepts/configuration/configmap/)
-  - [Secrets](https://kubernetes.io/docs/concepts/configuration/secret/)
+## Security-Focused Content
+- Discuss best practices for securing container environments.
+- Overview of tools for vulnerability scanning in container images.
 
-## Day 32: Introduction to AWS EKS
-- **Objective**: Understand AWS EKS and its advantages.
-- **Tasks**:
-  - Explore EKS features and pricing.
-- **Resources**:
-  - [AWS EKS Documentation](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html)
+## Expanded Advanced Topics
+- Explore serverless architecture on Kubernetes.
+- Understand service meshes and their benefits in microservices.
 
-## Day 33: Creating an EKS Cluster
-- **Objective**: Set up an EKS cluster via the AWS Management Console.
-- **Tasks**:
-  - Follow the steps to create a basic EKS cluster.
-- **Resources**:
-  - [Creating EKS Cluster](https://docs.aws.amazon.com/eks/latest/userguide/create-cluster.html)
+## General Resources
+- Docker Documentation: https://docs.docker.com/
+- Kubernetes Documentation: https://kubernetes.io/docs/
+- Online courses on containerization and orchestration.
 
-## Day 34: Deploying Applications on EKS
-- **Objective**: Deploy an application on EKS.
-- **Tasks**:
-  - Use the `kubectl` command to deploy.
-- **Code Examples**:
-  ```bash
-  kubectl apply -f deployment.yaml
-  ```
-- **Resources**:
-  - [Deploying on EKS](https://docs.aws.amazon.com/eks/latest/userguide/deploying-applications.html)
-
-## Day 35: Scaling Applications in Kubernetes
-- **Objective**: Scale Kubernetes applications effectively.
-- **Tasks**:
-  - Use commands to increase/decrease replicas.
-- **Code Examples**:
-  ```bash
-  kubectl scale deployment nginx --replicas=3
-  ```
-- **Resources**:
-  - [Scaling Applications](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
-
-## Day 36: Monitoring Kubernetes
-- **Objective**: Monitor and log Kubernetes applications.
-- **Tasks**:
-  - Explore tools like Prometheus and Grafana.
-- **Resources**:
-  - [Monitoring Kubernetes](https://kubernetes.io/docs/tasks/debug/debug-application/)
-
-## Day 37: Resource Management in Kubernetes
-- **Objective**: Manage resources for Kubernetes applications.
-- **Tasks**:
-  - Set requests and limits for CPU and memory.
-- **Resources**:
-  - [Managing Resources](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/)
-
-## Day 38: Introduction to Helm
-- **Objective**: Use Helm for managing Kubernetes applications.
-- **Tasks**:
-  - Install Helm and use it to deploy applications.
-- **Resources**:
-  - [Helm Documentation](https://helm.sh/docs/)
-
-## Day 39: Continuous Integration/Deployment
-- **Objective**: Implement CI/CD with Kubernetes.
-- **Tasks**:
-  - Explore tools like Jenkins and GitLab CI.
-- **Resources**:
-  - [CI/CD with Kubernetes](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/#continuous-integration-and-continuous-deployment)
-
-## Day 40: Best Practices & Security
-- **Objective**: Understand best practices for security in containers and orchestration.
-- **Tasks**:
-  - Explore security best practices for Docker and Kubernetes.
-- **Resources**:
-  - [Kubernetes Security](https://kubernetes.io/docs/concepts/security/overview/)
 
 ---
-
-This phase covers fundamental and advanced concepts in containerization and orchestration, preparing you for using Docker and Kubernetes in real-world applications!
