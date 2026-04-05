@@ -1,0 +1,41 @@
+Phase 2: Containers & Orchestration (Days 21–40)
+
+Day 21: Install Docker, run hello-world
+
+Day 22: Build your first Docker image
+
+Day 23: Learn Docker volumes and networking
+
+Day 24: Push image to DockerHub
+
+Day 25: Explore Docker Compose
+
+Day 26: Introduction to AWS ECR
+
+Day 27: Push Docker image to ECR
+
+Day 28: Deploy container with ECS
+
+Day 29: Explore Fargate basics
+
+Day 30: Compare ECS vs EKS
+
+Day 31: Install Minikube, run Kubernetes cluster
+
+Day 32: Deploy pods and services
+
+Day 33: Learn deployments and scaling
+
+Day 34: Explore ConfigMaps and Secrets
+
+Day 35: Use Helm charts
+
+Day 36: Explore Kubernetes operators
+
+Day 37: Practice rolling updates
+
+Day 38: Learn ingress controllers
+
+Day 39: Explore service discovery
+
+Day 40: Deploy multi-container app on Kubernetes
