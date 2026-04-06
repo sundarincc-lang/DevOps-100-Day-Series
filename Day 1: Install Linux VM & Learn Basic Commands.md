@@ -24,23 +24,5 @@ Both VirtualBox and VMware Workstation Player are free options you can use to ru
 
 
 
-[![Project Logo](images/Linux Directory List Structure Image.jpg)]
+https://github.com/sundarincc-lang/DevOps-100-Day-Series/blob/860f76c79c91829b63b76477bdddf0c04221917c/images/Linux%20Directory%20List%20Structure%20Image.jpg
 
-
-
-
-Directory	Purpose
-/ (Root)	The top-level directory. Every other directory is a "child" of this one.
-/bin	Essential command binaries that need to be available for all users (e.g., ls, cp).
-/boot	Contains static files of the boot loader, including the Linux kernel.
-/dev	Contains file representations of hardware components (e.g., hard drives, USBs).
-/etc	Configuration central. This is where system-wide settings and script files live.
-/home	Personal storage for users (e.g., /home/username). This is your playground.
-/lib	Shared library files required for the binaries in /bin and /sbin to run.
-/media	Mount point for removable media like USB drives or CD-ROMs.
-/opt	"Optional" software. Usually used for manual installations of third-party apps.
-/root	The home directory for the root user (the system administrator).
-/sbin	System binaries used for system administration (e.g., iptables, reboot).
-/tmp	Temporary files. Many systems clear this folder upon reboot.
-/usr	User programs and data. Includes its own /usr/bin for non-essential apps.
-/var	Variable data. This is where logs (/var/log) and databases are kept.
