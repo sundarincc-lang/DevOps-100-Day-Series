@@ -25,6 +25,9 @@ Both VirtualBox and VMware Workstation Player are free options you can use to ru
 
 [![Project Logo](images/Linux Directory List Structure Image.jpg)](https://github.com/tarun-sre/Project_100)
 
+[![Project Logo](images/Linux Directory List Structure Image.jpg)]
+
+
 
 
 Directory	Purpose
