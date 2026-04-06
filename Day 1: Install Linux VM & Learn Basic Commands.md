@@ -23,7 +23,8 @@ Both VirtualBox and VMware Workstation Player are free options you can use to ru
 - Launch VMware Player and create a new virtual machine.
 
 
-images/Linux Directory List Structure Image.jpg
+[![Project Logo](images/Linux Directory List Structure Image.jpg)](https://github.com/tarun-sre/Project_100)
+
 
 
 Directory	Purpose
