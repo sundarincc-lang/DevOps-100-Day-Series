@@ -23,6 +23,8 @@ Both VirtualBox and VMware Workstation Player are free options you can use to ru
 - Launch VMware Player and create a new virtual machine.
 
 
+images/Linux Directory List Structure Image.jpg
+
 
 Directory	Purpose
 / (Root)	The top-level directory. Every other directory is a "child" of this one.
