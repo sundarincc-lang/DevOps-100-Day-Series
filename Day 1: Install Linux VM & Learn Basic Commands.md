@@ -23,6 +23,6 @@ Both VirtualBox and VMware Workstation Player are free options you can use to ru
 - Launch VMware Player and create a new virtual machine.
 
 
+![image_alt](https://github.com/sundarincc-lang/DevOps-100-Day-Series/blob/860f76c79c91829b63b76477bdddf0c04221917c/images/Linux%20Directory%20List%20Structure%20Image.jpg)
 
-https://github.com/sundarincc-lang/DevOps-100-Day-Series/blob/860f76c79c91829b63b76477bdddf0c04221917c/images/Linux%20Directory%20List%20Structure%20Image.jpg
 
