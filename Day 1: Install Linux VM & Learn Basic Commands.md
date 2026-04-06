@@ -50,6 +50,12 @@ How to Open Your Ubuntu VM
 - Enter the username and password you set during installation.
 - You’ll now be inside your Ubuntu desktop environment.
 
+![image_alt](https://github.com/sundarincc-lang/DevOps-100-Day-Series/blob/c874cb17be926dfeaf7137461e65a1c31573ac7d/images/VM_ubuntu.png)
+
+![image_alt](https://github.com/sundarincc-lang/DevOps-100-Day-Series/blob/c874cb17be926dfeaf7137461e65a1c31573ac7d/images/VM_Linux_Usage.jpg)
+
+![image_alt](https://github.com/sundarincc-lang/DevOps-100-Day-Series/blob/c874cb17be926dfeaf7137461e65a1c31573ac7d/images/VM_Linux_Start.jpg)
+
 
 🎯 Takeaway
 By completing this step, you now have a virtualization platform ready to host your Linux environment. This is the foundation for practicing DevOps, SRE, and cloud engineering skills safely on your local machine.
@@ -62,6 +68,13 @@ Understand the Linux directory structure (/home, /etc, /var, etc.)
 ![image_alt](https://github.com/sundarincc-lang/DevOps-100-Day-Series/blob/860f76c79c91829b63b76477bdddf0c04221917c/images/Linux%20Directory%20List%20Structure%20Image.jpg)
 
 🔹Learn essential commands: ls, cd, pwd, mkdir, touch, rm, cp, mv
+
+![image_alt](https://github.com/sundarincc-lang/DevOps-100-Day-Series/blob/c874cb17be926dfeaf7137461e65a1c31573ac7d/images/DevOps_Unix_Commands.jpg)
+
+
+
+
+
 
 
 
