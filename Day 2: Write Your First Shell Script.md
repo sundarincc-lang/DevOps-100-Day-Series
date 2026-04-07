@@ -1,4 +1,4 @@
-🌱 Day 1 – Write Your First Shell Script
+🌱 Day 2 – Write Your First Shell Script
 📌 Goal: Automate routine tasks with basic shell scripting.
 
 Activities:
